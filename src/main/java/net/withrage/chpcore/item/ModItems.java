@@ -15,6 +15,8 @@ public class ModItems {
     public static final RegistryObject<Item> BETTER_CHEST = ITEMS.register("better_chest", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BEST_CHEST = ITEMS.register("best_chest", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEGENDARY_CHEST = ITEMS.register("legendary_chest", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ADVENTURE_CHEST = ITEMS.register("adventure_chest", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHITIN_CHEST = ITEMS.register("chitin_chest", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

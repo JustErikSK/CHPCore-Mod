@@ -18,6 +18,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.chpcore.creative_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BASIC_CHEST.get());
+                        output.accept(ModItems.ADVENTURE_CHEST.get());
+                        output.accept(ModItems.CHITIN_CHEST.get());
                         output.accept(ModItems.BETTER_CHEST.get());
                         output.accept(ModItems.BEST_CHEST.get());
                         output.accept(ModItems.LEGENDARY_CHEST.get());
