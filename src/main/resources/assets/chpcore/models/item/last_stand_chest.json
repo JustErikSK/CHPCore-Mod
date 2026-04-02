@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "chpcore:item/last_stand_chest_item"
+  }
+}

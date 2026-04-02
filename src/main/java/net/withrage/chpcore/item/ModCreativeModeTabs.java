@@ -19,10 +19,14 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BASIC_CHEST.get());
                         output.accept(ModItems.ADVENTURE_CHEST.get());
+                        output.accept(ModItems.UTILITY_CHEST.get());
+                        output.accept(ModItems.FOOD_CHEST.get());
                         output.accept(ModItems.CHITIN_CHEST.get());
                         output.accept(ModItems.BETTER_CHEST.get());
                         output.accept(ModItems.BEST_CHEST.get());
                         output.accept(ModItems.LEGENDARY_CHEST.get());
+                        output.accept(ModItems.LAST_STAND_CHEST.get());
+                        output.accept(ModItems.ENTROPY_CHEST.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -5,6 +5,10 @@
   "item.chpcore.legendary_chest": "Legendary Chest - Reward Icon",
   "item.chpcore.adventure_chest": "Adventure Chest - Reward Icon",
   "item.chpcore.chitin_chest": "Chitin Chest - Reward Icon",
+  "item.chpcore.utility_chest": "Utility Chest - Reward Icon",
+  "item.chpcore.food_chest": "Food Chest - Reward Icon",
+  "item.chpcore.last_stand_chest": "Last Stand Chest - Reward Icon",
+  "item.chpcore.entropy_chest": "Entropy Chest - Reward Icon",
 
   "creativetab.chpcore.creative_tab": "CHP: Core"
 }
