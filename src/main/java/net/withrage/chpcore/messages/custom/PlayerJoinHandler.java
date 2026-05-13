@@ -29,28 +29,20 @@ public class PlayerJoinHandler {
 
         if (!data.getBoolean(CHP_CORE_FIRST_JOIN)) {
             player.sendSystemMessage(
-                    Component.literal("Cave Horror Project: Origins has just been released!")
-                            .withStyle(ChatFormatting.DARK_RED)
-            );
-            player.sendSystemMessage(
-                    Component.literal("Go back to where it all began and enjoy the original experience that started this nightmare.")
+                    Component.literal("Want to enjoy Cave Horror Project with your friends?")
                             .withStyle(ChatFormatting.RED)
             );
             player.sendSystemMessage(
-                    Component.literal("")
-            );
-            player.sendSystemMessage(
-                    Component.literal("Download it from this link...")
+                    Component.literal("Use our code ' withrage ' to get 25% off of your server!")
                             .withStyle(style -> style
                                     .withColor(ChatFormatting.AQUA)
                                     .withUnderlined(true)
                                     .withClickEvent(new ClickEvent(
                                             ClickEvent.Action.OPEN_URL,
-                                            "https://curseforge.com/minecraft/modpacks/cave-horror-project-origins"
+                                            "https://www.bisecthosting.com/withrage"
                                     ))
                             )
             );
-
             data.putBoolean(CHP_CORE_FIRST_JOIN, true);
         }
     }
