@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -25,46 +26,70 @@ public class AncientDebrisFortuneEvent {
 
         if (level.getBlockState(pos).getBlock() != Blocks.ANCIENT_DEBRIS) return;
 
+        Player player = event.getPlayer();
         ItemStack tool = event.getPlayer().getMainHandItem();
+
+        if (!tool.isCorrectToolForDrops(level.getBlockState(pos))) return;
+
+        event.setCanceled(true);
+
+        level.destroyBlock(pos, false, player);
 
         int fortune = EnchantmentHelper.getItemEnchantmentLevel(
                 Enchantments.BLOCK_FORTUNE,
                 tool
         );
 
-        if (fortune <= 0) return;
+        int scraps = 1;
 
-        float chance = switch (fortune) {
-            case 1 -> 0.25F;
-            case 2 -> 0.40F;
-            default -> 0.55F;
-        };
+        boolean normalBonus = false;
+        boolean jackpotBonus = false;
 
-        int extraDebris = 0;
+        if (fortune > 0) {
+            float chance = switch (fortune) {
+                case 1 -> 0.25F;
+                case 2 -> 0.40F;
+                default -> 0.55F;
+            };
 
-        if (level.random.nextFloat() < chance) {
-            extraDebris = 1;
+            if (level.random.nextFloat() < chance) {
+                scraps++;
+                normalBonus = true;
+            }
+
+            if (fortune >= 3 && level.random.nextFloat() < 0.03F) {
+                scraps++;
+                jackpotBonus = true;
+            }
         }
-
-        if (fortune >= 3 && level.random.nextFloat() < 0.03F) {
-            extraDebris = 2;
-        }
-
-        if (extraDebris <= 0) return;
 
         Block.popResource(
                 level,
                 pos,
-                new ItemStack(Items.ANCIENT_DEBRIS, extraDebris)
+                new ItemStack(Items.NETHERITE_SCRAP, scraps)
         );
 
-        level.playSound(
-                null,
-                pos,
-                SoundEvents.EXPERIENCE_ORB_PICKUP,
-                SoundSource.BLOCKS,
-                0.6F,
-                1.8F
-        );
+        if (jackpotBonus) {
+            level.playSound(
+                    null,
+                    pos,
+                    SoundEvents.PLAYER_LEVELUP,
+                    SoundSource.BLOCKS,
+                    0.7F,
+                    1.8F
+            );
+        }
+        else if (normalBonus) {
+            level.playSound(
+                    null,
+                    pos,
+                    SoundEvents.EXPERIENCE_ORB_PICKUP,
+                    SoundSource.BLOCKS,
+                    0.6F,
+                    1.8F
+            );
+        }
+
+        tool.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(player.getUsedItemHand()));
     }
 }
