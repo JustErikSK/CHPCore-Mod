@@ -31,14 +31,15 @@ public class AncientDebrisFortuneEvent {
 
         if (!tool.isCorrectToolForDrops(level.getBlockState(pos))) return;
 
-        event.setCanceled(true);
+        int silkTouch = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, tool);
+        if (silkTouch > 0) {
+            return;
+        }
 
+        event.setCanceled(true);
         level.destroyBlock(pos, false, player);
 
-        int fortune = EnchantmentHelper.getItemEnchantmentLevel(
-                Enchantments.BLOCK_FORTUNE,
-                tool
-        );
+        int fortune = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, tool);
 
         int scraps = 1;
 
