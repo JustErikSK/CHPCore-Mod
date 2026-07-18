@@ -7,11 +7,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import net.withrage.chpcore.CHPcore;
+import net.withrage.chpcore.CHPCore;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CHPcore.MODID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CHPCore.MODID);
 
     public static final RegistryObject<CreativeModeTab> CHPCORE_CREATIVE_TAB = CREATIVE_MODE_TABS.register("chpcore_creative_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEGENDARY_CHEST.get()))

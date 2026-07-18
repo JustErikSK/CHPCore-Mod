@@ -8,9 +8,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.withrage.chpcore.CHPcore;
+import net.withrage.chpcore.CHPCore;
 
-@Mod.EventBusSubscriber(modid = CHPcore.MODID)
+@Mod.EventBusSubscriber(modid = CHPCore.MODID)
 public class PlayerJoinHandler {
 
     private static final String CHP_CORE_FIRST_JOIN = "chp_core_first_join";
