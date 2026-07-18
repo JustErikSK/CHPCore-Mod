@@ -4,3 +4,4 @@ Features made so far:
 - Icons for quest rewards
 - Made fortune work on Ancient Debris
 - Netherite Scrap now has a bit cheaper recipe
+- World-specific config for From the Fog mod
