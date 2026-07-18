@@ -11,11 +11,13 @@ import net.withrage.chpcore.config.CHPCoreServerConfig;
 import net.withrage.chpcore.item.ModCreativeModeTabs;
 import net.withrage.chpcore.item.ModItems;
 import net.withrage.chpcore.messages.custom.PlayerJoinHandler;
+import org.slf4j.Logger;
 
 @Mod(CHPCore.MODID)
 public class CHPCore
 {
     public static final String MODID = "chpcore";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public CHPCore(FMLJavaModLoadingContext context)
     {
