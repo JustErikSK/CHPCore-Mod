@@ -84,7 +84,7 @@ public final class FromTheFogIntegration {
         set(scoreboard, objective, "creepingVanishingDelayConfig", 0);
         set(scoreboard, objective, "stalkingVanishingDelayConfig", 0);
 
-        set(scoreboard, objective, "noSleepConfig", 1);
+        set(scoreboard, objective, "noSleepConfig", 0);
         set(scoreboard, objective, "dreadfulDonationConfig", 1);
         set(scoreboard, objective, "crimsonCurseConfig", 1);
 
