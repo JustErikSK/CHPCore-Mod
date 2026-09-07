@@ -22,6 +22,10 @@ public class ModItems {
     public static final RegistryObject<Item> LAST_STAND_CHEST = ITEMS.register("last_stand_chest", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENTROPY_CHEST = ITEMS.register("entropy_chest", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> TORN_HIDE =  ITEMS.register("torn_hide", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FOG_FRAGMENT = ITEMS.register("fog_fragment", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

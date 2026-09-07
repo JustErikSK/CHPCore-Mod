@@ -27,6 +27,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LEGENDARY_CHEST.get());
                         output.accept(ModItems.LAST_STAND_CHEST.get());
                         output.accept(ModItems.ENTROPY_CHEST.get());
+                        output.accept(ModItems.TORN_HIDE.get());
+                        output.accept(ModItems.FOG_FRAGMENT.get());
+                        output.accept(ModItems.FOG_CRYSTAL.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -9,6 +9,9 @@
   "item.chpcore.food_chest": "Food Chest - Reward Icon",
   "item.chpcore.last_stand_chest": "Last Stand Chest - Reward Icon",
   "item.chpcore.entropy_chest": "Entropy Chest - Reward Icon",
+  "item.chpcore.torn_hide": "Torn Hide",
+  "item.chpcore.fog_fragment": "Fog Fragment",
+  "item.chpcore.fog_crystal": "Fog Crystal",
 
   "creativetab.chpcore.creative_tab": "CHP: Core"
 }
