@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LAST_STAND_CHEST.get());
                         output.accept(ModItems.ENTROPY_CHEST.get());
                         output.accept(ModItems.TORN_HIDE.get());
+                        output.accept(ModItems.DWELLER_BOOTS.get());
                         output.accept(ModItems.FOG_FRAGMENT.get());
                         output.accept(ModItems.FOG_CRYSTAL.get());
                     }).build());

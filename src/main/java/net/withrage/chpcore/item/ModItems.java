@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.withrage.chpcore.CHPCore;
+import net.withrage.chpcore.item.custom.DwellerBootsItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -25,6 +26,7 @@ public class ModItems {
     public static final RegistryObject<Item> TORN_HIDE =  ITEMS.register("torn_hide", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FOG_FRAGMENT = ITEMS.register("fog_fragment", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DWELLER_BOOTS = ITEMS.register("dweller_boots", () -> new DwellerBootsItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

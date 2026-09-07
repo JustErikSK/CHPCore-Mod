@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chpcore:item/adventure_chest_item"
+    "layer0": "chpcore:item/dweller_boots"
   }
 }
