@@ -1,12 +1,14 @@
 package net.withrage.chpcore.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.withrage.chpcore.CHPCore;
 import net.withrage.chpcore.item.custom.DwellerBootsItem;
+import net.withrage.chpcore.item.custom.DwellerClawItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -27,6 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> FOG_FRAGMENT = ITEMS.register("fog_fragment", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DWELLER_BOOTS = ITEMS.register("dweller_boots", () -> new DwellerBootsItem(new Item.Properties()));
+    public static final RegistryObject<Item> DWELLER_CLAW = ITEMS.register("dweller_claw", () -> new DwellerClawItem(Tiers.IRON, 4, -2.2F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
