@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.withrage.chpcore.config.CHPCoreServerConfig;
+import net.withrage.chpcore.effect.ModEffects;
 import net.withrage.chpcore.item.ModCreativeModeTabs;
 import net.withrage.chpcore.item.ModItems;
 import net.withrage.chpcore.messages.custom.PlayerJoinHandler;
@@ -26,6 +27,7 @@ public class CHPCore
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(PlayerJoinHandler.class);
+        ModEffects.EFFECTS.register(modEventBus);
 
         ModLoadingContext.get().registerConfig(
                 ModConfig.Type.SERVER,

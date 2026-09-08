@@ -14,5 +14,10 @@
   "item.chpcore.fog_fragment": "Fog Fragment",
   "item.chpcore.fog_crystal": "Fog Crystal",
 
+  "effect.chpcore.dweller_instinct": "Dweller's Instinct",
+
+  "tooltip.chpcore.dweller_boots.ability": "Grants Dweller's Instinct effect.",
+  "tooltip.chpcore.dweller_boots.description": "Move and sneak faster while underground.",
+
   "creativetab.chpcore.creative_tab": "CHP: Core"
 }
