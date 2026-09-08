@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": {
+      "translate": "advancement.chpcore.kill_cave_dweller.title"
+    },
+    "description": {
+      "translate": "advancement.chpcore.kill_cave_dweller.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_cave_dweller": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cave_dweller:cave_dweller"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_cave_dweller"
+    ]
+  ]
+}

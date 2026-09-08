@@ -20,5 +20,8 @@
   "tooltip.chpcore.dweller_boots.ability": "Grants Dweller's Instinct effect.",
   "tooltip.chpcore.dweller_boots.description": "Move and sneak faster while underground.",
 
+  "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
+  "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",
+
   "creativetab.chpcore.creative_tab": "CHP: Core"
 }
