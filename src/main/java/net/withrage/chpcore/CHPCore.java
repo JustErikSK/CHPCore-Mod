@@ -11,6 +11,7 @@ import net.withrage.chpcore.config.CHPCoreServerConfig;
 import net.withrage.chpcore.effect.ModEffects;
 import net.withrage.chpcore.item.ModCreativeModeTabs;
 import net.withrage.chpcore.item.ModItems;
+import net.withrage.chpcore.loot.ModLootModifiers;
 import net.withrage.chpcore.messages.custom.PlayerJoinHandler;
 import org.slf4j.Logger;
 
@@ -28,6 +29,7 @@ public class CHPCore
         ModItems.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(PlayerJoinHandler.class);
         ModEffects.EFFECTS.register(modEventBus);
+        ModLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
 
         ModLoadingContext.get().registerConfig(
                 ModConfig.Type.SERVER,
