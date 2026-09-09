@@ -26,7 +26,7 @@ public class ModMobDrops {
         }
 
         if (entityId.equals(ResourceLocation.fromNamespaceAndPath("man", "managgresive"))) {
-            int fragmentAmount = 1 + event.getEntity().getRandom().nextInt(2);
+            int fragmentAmount = 1 + event.getEntity().getRandom().nextInt(4);
 
             ItemStack fragmentStack = new ItemStack(
                     ModItems.FOG_FRAGMENT.get(),

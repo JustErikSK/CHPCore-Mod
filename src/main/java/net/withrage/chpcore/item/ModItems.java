@@ -7,8 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.withrage.chpcore.CHPCore;
-import net.withrage.chpcore.item.custom.DwellerBootsItem;
-import net.withrage.chpcore.item.custom.DwellerClawItem;
+import net.withrage.chpcore.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -25,9 +24,9 @@ public class ModItems {
     public static final RegistryObject<Item> LAST_STAND_CHEST = ITEMS.register("last_stand_chest", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENTROPY_CHEST = ITEMS.register("entropy_chest", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> TORN_HIDE =  ITEMS.register("torn_hide", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FOG_FRAGMENT = ITEMS.register("fog_fragment", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TORN_HIDE =  ITEMS.register("torn_hide", () -> new TornHideItem(new Item.Properties()));
+    public static final RegistryObject<Item> FOG_FRAGMENT = ITEMS.register("fog_fragment", () -> new FogFragmentItem(new Item.Properties()));
+    public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new FogCrystalItem(new Item.Properties()));
     public static final RegistryObject<Item> DWELLER_BOOTS = ITEMS.register("dweller_boots", () -> new DwellerBootsItem(new Item.Properties()));
     public static final RegistryObject<Item> DWELLER_CLAW = ITEMS.register("dweller_claw", () -> new DwellerClawItem(Tiers.IRON, 4, -2.2F, new Item.Properties()));
 

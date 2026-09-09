@@ -17,8 +17,17 @@
 
   "effect.chpcore.dweller_instinct": "Dweller's Instinct",
 
-  "tooltip.chpcore.dweller_boots.ability": "Grants Dweller's Instinct effect.",
-  "tooltip.chpcore.dweller_boots.description": "Move and sneak faster while underground.",
+  "tooltip.chpcore.dweller_boots.ability": "Grants Dweller's Instinct effect - move and sneak faster while underground.",
+  "tooltip.chpcore.dweller_boots.description": "Crafted from Torn Hide.",
+  "tooltip.chpcore.torn_hide.description": "A ragged piece of hide torn from a Cave Dweller.",
+  "tooltip.chpcore.torn_hide.drop": "Common drop from Cave Dweller.",
+  "tooltip.chpcore.dweller_claw.description": "Strikes inflict short Wither effect.",
+  "tooltip.chpcore.dweller_claw.drop": "Rare drop from Cave Dweller.",
+  "tooltip.chpcore.fog_fragment.description": "A lingering fragment of unnatural fog.",
+  "tooltip.chpcore.fog_fragment.drop": "Common drop from The Man From The Fog.",
+  "tooltip.chpcore.fog_crystal.description": "A condensed crystal formed from the fog.",
+  "tooltip.chpcore.fog_crystal.craft": "Crafted from the Tear Of The Man surrounded by 4 Fog Crystals.",
+  "tooltip.chpcore.fog_crystal.status": "This item is WIP and does not have any uses yet.",
 
   "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
   "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",
