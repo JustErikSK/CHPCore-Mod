@@ -2,7 +2,7 @@
   "parent": "minecraft:adventure/kill_a_mob",
   "display": {
     "icon": {
-      "item": "minecraft:stone"
+      "item": "chpcore:dweller_claw"
     },
     "title": {
       "translate": "advancement.chpcore.kill_cave_dweller.title"
