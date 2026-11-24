@@ -26,7 +26,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> TORN_HIDE =  ITEMS.register("torn_hide", () -> new TornHideItem(new Item.Properties()));
     public static final RegistryObject<Item> FOG_FRAGMENT = ITEMS.register("fog_fragment", () -> new FogFragmentItem(new Item.Properties()));
-    public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new FogCrystalItem(new Item.Properties()));
+    public static final RegistryObject<Item> FOG_CRYSTAL =  ITEMS.register("fog_crystal", () -> new FogCrystalItem(new Item.Properties().durability(20)));
     public static final RegistryObject<Item> DWELLER_BOOTS = ITEMS.register("dweller_boots", () -> new DwellerBootsItem(new Item.Properties()));
     public static final RegistryObject<Item> DWELLER_CLAW = ITEMS.register("dweller_claw", () -> new DwellerClawItem(Tiers.IRON, 4, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> APOLLYON_HEART =  ITEMS.register("apollyon_heart", () -> new Item(new Item.Properties()));

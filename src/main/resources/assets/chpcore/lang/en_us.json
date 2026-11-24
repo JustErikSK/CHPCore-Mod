@@ -31,7 +31,8 @@
   "tooltip.chpcore.fog_fragment.drop": "Common drop from The Man From The Fog.",
   "tooltip.chpcore.fog_crystal.description": "A condensed crystal formed from the fog.",
   "tooltip.chpcore.fog_crystal.craft": "Crafted from the Tear Of The Man surrounded by 4 Fog Crystals.",
-  "tooltip.chpcore.fog_crystal.status": "This item is WIP and does not have any uses yet.",
+  "tooltip.chpcore.fog_crystal.ability": "Right-click to use ability - Invisibility for 15 seconds with 3 minutes cooldown.",
+  "tooltip.chpcore.fog_crystal.passive": "Passive ability - Reduces the detection range for certain hostile mobs by 25%.",
 
   "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
   "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",
