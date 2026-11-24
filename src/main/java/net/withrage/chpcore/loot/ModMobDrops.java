@@ -77,7 +77,7 @@ public class ModMobDrops {
             }
         }
 
-        if (entityId.equals(ResourceLocation.fromNamespaceAndPath("the_knocker", "the_knocker"))) {
+        if (entityId.equals(ResourceLocation.fromNamespaceAndPath("the_knocker", "knocker"))) {
             int fragmentAmount = 1 + event.getEntity().getRandom().nextInt(4);
 
             ItemStack fragmentStack = new ItemStack(
