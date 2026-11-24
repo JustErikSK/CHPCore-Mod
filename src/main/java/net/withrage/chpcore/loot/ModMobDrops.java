@@ -76,5 +76,24 @@ public class ModMobDrops {
                 event.getDrops().add(clawDrop);
             }
         }
+
+        if (entityId.equals(ResourceLocation.fromNamespaceAndPath("the_knocker", "the_knocker"))) {
+            int fragmentAmount = 1 + event.getEntity().getRandom().nextInt(4);
+
+            ItemStack fragmentStack = new ItemStack(
+                    ModItems.HOLLOW_BONE.get(),
+                    fragmentAmount
+            );
+
+            ItemEntity drop = new ItemEntity(
+                    event.getEntity().level(),
+                    event.getEntity().getX(),
+                    event.getEntity().getY(),
+                    event.getEntity().getZ(),
+                    fragmentStack
+            );
+
+            event.getDrops().add(drop);
+        }
     }
 }
