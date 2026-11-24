@@ -32,6 +32,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DWELLER_CLAW.get());
                         output.accept(ModItems.FOG_FRAGMENT.get());
                         output.accept(ModItems.FOG_CRYSTAL.get());
+                        output.accept(ModItems.APOLLYON_HEART.get());
+                        output.accept(ModItems.BROKEN_CROWN.get());
+                        output.accept(ModItems.ECHO_LANTERN.get());
+                        output.accept(ModItems.HOLLOW_BONE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
