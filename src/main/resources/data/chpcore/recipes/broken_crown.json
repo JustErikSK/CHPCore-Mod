@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " A ",
+    "BCB",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "minecraft:emerald"
+    },
+    "C": {
+      "item": "chpcore:apollyon_heart"
+    },
+    "D": {
+      "item": "minecraft:golden_helmet"
+    }
+  },
+  "result": {
+    "item": "chpcore:broken_crown",
+    "count": 1
+  }
+}
