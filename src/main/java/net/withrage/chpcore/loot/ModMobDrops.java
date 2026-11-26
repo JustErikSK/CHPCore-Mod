@@ -100,7 +100,7 @@ public class ModMobDrops {
             int fragmentAmount = 1;
 
             ItemStack fragmentStack = new ItemStack(
-                    ModItems.HOLLOW_BONE.get(),
+                    ModItems.APOLLYON_HEART.get(),
                     fragmentAmount
             );
 
