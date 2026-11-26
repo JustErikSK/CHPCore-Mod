@@ -31,7 +31,7 @@ public class ModItems {
     public static final RegistryObject<Item> DWELLER_CLAW = ITEMS.register("dweller_claw", () -> new DwellerClawItem(Tiers.IRON, 4, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> APOLLYON_HEART =  ITEMS.register("apollyon_heart", () -> new ApollyonHeart(new Item.Properties()));
     public static final RegistryObject<Item> BROKEN_CROWN =  ITEMS.register("broken_crown", () -> new BrokenCrownItem(new Item.Properties().durability(10)));
-    public static final RegistryObject<Item> ECHO_LANTERN =  ITEMS.register("echo_lantern", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ECHO_LANTERN =  ITEMS.register("echo_lantern", () -> new EchoLanternItem(new Item.Properties().durability(32)));
     public static final RegistryObject<Item> HOLLOW_BONE =  ITEMS.register("hollow_bone", () -> new HollowBoneItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

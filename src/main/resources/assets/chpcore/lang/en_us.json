@@ -40,6 +40,10 @@
   "tooltip.chpcore.hollow_bone.drop": "Common drop from The Knocker.",
   "tooltip.chpcore.apollyon_heart.description": "Its master has fallen, yet it continues to beat.",
   "tooltip.chpcore.apollyon_heart.drop": "Common drop from The Damned.",
+  "tooltip.chpcore.echo_lantern.description": "Even the darkness cannot hide what lurks within...",
+  "tooltip.chpcore.echo_lantern.craft": "Crafted from Glowstone Dust with Warped Planks on the sides and Hollow Bones in the corners.",
+  "tooltip.chpcore.echo_lantern.ability": "Right-click to use ability - Reveals nearby hostile mobs in a 32-block range for 5 seconds with 1 minute cooldown.",
+  "tooltip.chpcore.echo_lantern.passive": "Passive ability - Emits light while held.",
 
   "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
   "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",
