@@ -38,6 +38,8 @@
   "tooltip.chpcore.broken_crown.ability": "Right-click to use ability - Night Vision for 3 minutes with 5 minutes cooldown.",
   "tooltip.chpcore.hollow_bone.description": "Even in death, the knocking never stops.",
   "tooltip.chpcore.hollow_bone.drop": "Common drop from The Knocker.",
+  "tooltip.chpcore.apollyon_heart.description": "Its master has fallen, yet it continues to beat.",
+  "tooltip.chpcore.apollyon_heart.drop": "Common drop from The Damned.",
 
   "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
   "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",

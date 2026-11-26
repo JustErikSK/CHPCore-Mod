@@ -95,5 +95,24 @@ public class ModMobDrops {
 
             event.getDrops().add(drop);
         }
+
+        if (entityId.equals(ResourceLocation.fromNamespaceAndPath("apollyon", "the_damned"))) {
+            int fragmentAmount = 1;
+
+            ItemStack fragmentStack = new ItemStack(
+                    ModItems.HOLLOW_BONE.get(),
+                    fragmentAmount
+            );
+
+            ItemEntity drop = new ItemEntity(
+                    event.getEntity().level(),
+                    event.getEntity().getX(),
+                    event.getEntity().getY(),
+                    event.getEntity().getZ(),
+                    fragmentStack
+            );
+
+            event.getDrops().add(drop);
+        }
     }
 }
