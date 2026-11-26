@@ -33,6 +33,9 @@
   "tooltip.chpcore.fog_crystal.craft": "Crafted from the Tear Of The Man surrounded by 4 Fog Crystals.",
   "tooltip.chpcore.fog_crystal.ability": "Right-click to use ability - Invisibility for 15 seconds with 3 minutes cooldown.",
   "tooltip.chpcore.fog_crystal.passive": "Passive ability - Reduces the detection range for certain hostile mobs by 25%.",
+  "tooltip.chpcore.broken_crown.description": "A remnant of a fallen ruler. Its power pierces through the darkness.",
+  "tooltip.chpcore.broken_crown.craft": "Crafted from the Apollyon's Heart, Golden Helmet, 2 Emeralds and a Redstone Dust.",
+  "tooltip.chpcore.broken_crown.ability": "Right-click to use ability - Night Vision for 3 minutes with 5 minutes cooldown.",
 
   "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
   "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",
