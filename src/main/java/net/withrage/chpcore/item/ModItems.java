@@ -32,7 +32,7 @@ public class ModItems {
     public static final RegistryObject<Item> APOLLYON_HEART =  ITEMS.register("apollyon_heart", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BROKEN_CROWN =  ITEMS.register("broken_crown", () -> new BrokenCrownItem(new Item.Properties().durability(10)));
     public static final RegistryObject<Item> ECHO_LANTERN =  ITEMS.register("echo_lantern", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> HOLLOW_BONE =  ITEMS.register("hollow_bone", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HOLLOW_BONE =  ITEMS.register("hollow_bone", () -> new HollowBoneItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

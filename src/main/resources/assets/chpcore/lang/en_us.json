@@ -36,6 +36,8 @@
   "tooltip.chpcore.broken_crown.description": "A remnant of a fallen ruler. Its power pierces through the darkness.",
   "tooltip.chpcore.broken_crown.craft": "Crafted from the Apollyon's Heart, Golden Helmet, 2 Emeralds and a Redstone Dust.",
   "tooltip.chpcore.broken_crown.ability": "Right-click to use ability - Night Vision for 3 minutes with 5 minutes cooldown.",
+  "tooltip.chpcore.hollow_bone.description": "Even in death, the knocking never stops.",
+  "tooltip.chpcore.hollow_bone.drop": "Common drop from The Knocker.",
 
   "advancement.chpcore.kill_cave_dweller.title": "What Dwells In The Caves",
   "advancement.chpcore.kill_cave_dweller.description": "Kill the Cave Dweller",
